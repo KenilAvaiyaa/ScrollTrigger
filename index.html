@@ -1,17 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sticky cards</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
+        html,
+        body {
+            height: 100%;
+            width: 100%;
+            background-color: black;
+        }
+    </style>
 </head>
-<body>
-    
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<body>
+    <main class="w-full flex items-center flex-col gap-2 pt-[15vh]">
+        <div
+            class="card card1 flex flex-col items-center rounded-lg gap-4 bg-[#2F211C] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/1.png" alt="Image 1">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span
+                        class="text-[6vw] font-bold leading-[6vw]">Architecture</span></h1>
+                <p class="text-[1vw] pt-[2vh]">Designing spaces that inspire</p>
+            </div>
+        </div>
+        <div
+            class="card card2 flex flex-col items-center rounded-lg gap-4 bg-[#4D4133] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/2.png" alt="Image 2">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span class="text-[6vw] font-bold leading-[6vw]">Sports
+                    </span></h1>
+                <p class="text-[1vw] pt-[2vh]">Pushing limits, achieving greatness</p>
+            </div>
+        </div>
+        <div
+            class="card card3 flex flex-col items-center rounded-lg gap-4 bg-[#2F211C] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/3.png" alt="Image 3">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span
+                        class="text-[6vw] font-bold leading-[6vw]">Earth</span></h1>
+                <p class="text-[1vw] pt-[2vh]">Our home, our responsibility</p>
+            </div>
+        </div>
+        <div
+            class="card card4 flex flex-col items-center rounded-lg gap-4 bg-[#4D4133] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/4.png" alt="Image 4">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span
+                        class="text-[6vw] font-bold leading-[6vw]">Study</span></h1>
+                <p class="text-[1vw] pt-[2vh]">Knowledge is power, learn always</p>
+            </div>
+        </div>
+        <div
+            class="card card5 flex flex-col items-center rounded-lg gap-4 bg-[#2F211C] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/5.png" alt="Image 5">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span
+                        class="text-[6vw] font-bold leading-[6vw]">Computer</span></h1>
+                <p class="text-[1vw] pt-[2vh]">Revolutionizing the digital world</p>
+            </div>
+        </div>
+        <div
+            class="card card6 flex flex-col items-center rounded-lg gap-4 bg-[#4D4133] px-10 py-[10vh] sticky top-[15vh] w-[55vw]">
+            <img class="w-[20vw] object-cover" src="./images/6.png" alt="Image 6">
+            <div class="content text-white text-center uppercase">
+                <h1 class="text-[4vw] leading-[4vw]">the<br><span
+                        class="text-[6vw] font-bold leading-[6vw]">Architecture</span></h1>
+                <p class="text-[1vw] pt-[2vh]">Shaping the future of living</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
+
 </html>
